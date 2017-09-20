@@ -1,10 +1,14 @@
 #section-forms {
-  background-image: url('/assets/blue-pattern-bg.svg');
-  background-size: 100px !important;
-  background-repeat: repeat;
-  padding-top: 45px;
-  border-top: solid 2px #fff;
+  background-color: #41628e;
+  padding: 15px 0;
   border-bottom: solid 2px #fff;
+
+  .adobe {
+    color: #fff !important;
+    text-decoration: underline !important;
+
+    @include link-color(#fff);
+  }
 
   .heading {
     text-align: center;
@@ -12,12 +16,17 @@
     padding-bottom: 15px;
 
     &__title {
-      font-weight: 700px;
-      color: #4b382c;
+      color: #fff;
       line-height: 1;
       padding-bottom: 0;
       padding-top: 10px;
       margin-bottom: 0;
+    }
+
+    &__copy {
+      color: #fff;
+      font-family: $ff-open;
+      padding-top: 20px;
     }
   }
 
@@ -27,54 +36,56 @@
 
   .forms {
     &__byline {
-      color: #424242;
+      color: #fff;
       font-size: 18px;
       padding-bottom: 15px;
     }
 
     &__copy {
-      color: #3e3e3e;
-
-      &a:hover {
-        color: #3e3e3e;
-      }
+      color: #fff;
+      font-family: $ff-open;
     }
 
-    &__btn-wrapper {
-      padding-bottom: 30px;
+    &a:hover {
+      color: #fff;
     }
   }
 
+  &__btn-wrapper {
+    padding-bottom: 30px;
+  }
+}
+
+.btn {
+  margin: 10px 0;
+  padding: 10px;
+  width: 270px;
+  font-weight: 400;
+}
+
+.line-break {
+  display: none;
+}
+
+@media (min-width: 768px) {
   .btn {
-    margin: 10px 0;
-    padding: 10px 20px;
-    width: 270px;
+    width: 339px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
   }
 
-  .line-break {
-    display: none;
+  .column__right {
+    padding-left: 25px;
   }
 
-  @media (min-width: 768px) {
-    .btn {
-      width: 360px;
-      margin-left: 15px;
-      margin-right: 15px;
-    }
+  .column__left {
+    padding-right: 25px;
+  }
 
-    .forms__btn-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .line-break {
-      display: inline-block;
-      height: 54px;
-      width: 1px;
-      background: #1a202a;
-      line-height: 0;
-      margin-bottom: 0;
-    }
+  .forms__btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
