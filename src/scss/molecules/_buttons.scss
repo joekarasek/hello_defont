@@ -16,24 +16,24 @@ button.btn {
   &:focus {
     background-color: lighten(#ff7a10, 10%);
     color: #fff;
-    box-shadow: 0 3px rgba(179, 77, 6, 0.46);
+    box-shadow: 0 3px rgba(179, 77, 6, 1);
     transition: all 0.3s ease;
     text-decoration: none;
   }
 
   &.btn--style-two {
+    margin-top: 30px !important;
     background: none;
-    background-color: #06b7d7;
-    border: solid 2px #fff;
+    background-color: #7dbc3a;
     font-family: $ff-lato;
-    //box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.36);
+    box-shadow: 0 3px #457613;
 
     @include font-size(16px, 16px, 15px, 14px, 13px);
 
     &:hover,
     &:focus {
-      background-color: darken(#06b7d7, 15%);
-      //box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.d46);
+      background-color: darken(#7dbc3a, 7%);
+      box-shadow: 0 3px #457613;
     }
   }
 
@@ -48,7 +48,7 @@ button.btn {
     &:hover,
     &:focus {
       background-color: lighten(#304d73, 15%);
-      box-shadow: 0 3px rgba(25, 50, 82, 0.46);
+      box-shadow: 0 3px rgba(25, 50, 82, 1);
     }
   }
 
