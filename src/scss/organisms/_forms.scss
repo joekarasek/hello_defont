@@ -56,10 +56,9 @@
   }
 }
 
-.btn {
+.forms-btn {
   margin: 10px 0;
   padding: 10px;
-  width: 270px;
   font-weight: 400;
 }
 
@@ -68,7 +67,7 @@
 }
 
 @media (min-width: 768px) {
-  .btn {
+  .forms-btn {
     width: 339px;
     margin-left: 15px;
     margin-right: 15px;
