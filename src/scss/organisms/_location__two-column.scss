@@ -1,11 +1,28 @@
+#section-team {
+  max-width: 100%;
+  height: auto;
+
+  @media (min-width: 1200px) {
+    background-position: center;
+  }
+
+  .team-border {
+    width: 100%;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+  }
+}
+
 #section-location {
-  // padding-bottom: 60px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .location.location__two-column {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
+  justify-content: center;
 
   .location__map,
   .location__card--wrapper {
@@ -13,18 +30,19 @@
   }
 
   .location__map {
-    margin-top: 45px;
+    padding-top: 20px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     flex-direction: row;
 
     .location__card--wrapper {
-      width: 50%;
+      width: 40%;
+      padding-right: 70px;
     }
 
     .location__map {
-      margin-top: 0;
+      padding-top: 0;
       width: 50%;
       height: 100%;
     }

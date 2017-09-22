@@ -1,54 +1,50 @@
 #section-insurance {
-  $c-no-insurance: #06b7d7;
-  $c-sub-header: #4b382c;
+  $c-no-insurance: #2e4a6f;
+  $c-sub-header: #1a8582;
   $c-preventative: #303030;
   $c-copy: #303030;
   $c-mobile-bg: #fff;
 
-  text-align: right;
   background-color: #fff;
   position: relative;
 
   .title {
     letter-spacing: 0;
-    font-family: $ff-dancing;
-    font-weight: 400;
     margin-bottom: 0;
     line-height: 1;
     color: $c-no-insurance;
-    padding: 15px 0;
 
-    @include font-size(106px, 106px, 70px, 70px, 55px);
+    @include font-size(74px, 60px, 38px, 40px, 36px);
   }
 
   .sub-title {
     font-weight: 400;
     color: $c-sub-header;
     margin-bottom: 0;
-    text-transform: uppercase;
-    letter-spacing: 1.7px;
+    font-family: $ff-dancing;
 
-    @include font-size(33px, 33px, 24px, 25px, 20px);
+    @include font-size(57px, 43px, 28px, 30px, 30px);
   }
 
   .preventative-care {
-    font-weight: 400;
-    line-height: 1;
+    font-weight: 700;
+    line-height: 1.2;
     color: $c-preventative;
     letter-spacing: -0.24px;
-    padding: 20px 0;
+    padding-bottom: 10px;
     margin-bottom: 0;
+    font-family: $ff-lato;
 
-    @include font-size(37px, 35px, 24px, 30px, 23px);
+    @include font-size(28px, 24px, 22px, 24px, 24px);
   }
 
   .insurance__copy {
     color: $c-copy;
-    list-style: none;
+    list-style-type: circle;
     margin-bottom: 10px;
     line-height: 1.2;
 
-    @include font-size(18px, 17px, 16px, 16px, 15px);
+    @include font-size(18px, 17px, 16px, 16px, 14px);
 
     @media (min-width: 768px) {
       text-align: left;
@@ -62,32 +58,17 @@
 
   .insurance__image {
     @media (min-width: 768px) {
-      padding-top: 70px;
-      max-height: 450px;
-    }
-
-    @media (min-width: 992px) {
-      padding-top: 70px;
-      max-height: 500px;
-    }
-
-    @media (min-width: 1200px) {
-      padding-top: 50px;
-      max-height: 550px;
+      width: 100%;
     }
   }
 
   .btn {
-    margin-top: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-
-    @include lr-padding(80px, 70px, 60px, 60px, 40px);
   }
 
-  //Fix for insurance background on mobile
-  .mobile-insurance-fix {
-    display: none;
+  .mobile-insurance {
+    padding: 20px;
   }
 
   .flexbox-wrapper {

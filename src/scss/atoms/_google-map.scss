@@ -1,4 +1,3 @@
-
 #google-map,
 #google-map5,
 .google-map iframe {
@@ -9,14 +8,14 @@
   }
 
   @media (min-width: $width-sm) {
-    height: 888px !important;
+    height: 250px !important;
   }
 
-  @media (min-width: $width-md) {
-    height: 888px !important;
+  @media (min-width: $width-md +1) {
+    height: 750px !important;
   }
 
   @media (min-width: $width-lg) {
-    height: 888px !important;
+    height: 750px !important;
   }
 }
