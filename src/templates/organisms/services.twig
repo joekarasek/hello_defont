@@ -1,58 +1,44 @@
 <section id="section-services">
 
-    <div class="heading">
+    <div class="feature">
         <div class="container">
-            <h2 class="heading__title">Our Services</h2>
-            {#<h4 class="heading__byline">Learn more about our treatments and services.</h4>#}
-            <p class="heading__copy">By actively preventing disease and decay through regular home care, professional
-                dental cleanings and regular exams, we’ll partner with you to maintain your healthy, beautiful smile.
-                Prevention is always better than treatment, so if it’s been a while since you’ve seen a dentist, please
-                give us a call&nbsp;or&nbsp;<a href="#" data-target="#requestAppointmentForm" data-toggle="modal">click&nbsp;to&nbsp;request&nbsp;an&nbsp;appointment.</a></p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="/assets/services/smile-makeovers.jpg" alt="Smile Makeovers" class="feature__image">
+                    <h3 class="feature__title">Smile Makeovers</h3>
+                    <p class="feature__copy">Cosmetic dentistry is one of the most cost-effective ways to improve your appearance. A beautiful, bright, healthy smile can increase self confidence and overall life satisfaction. Cosmetic dentistry can encompass things such as tooth-colored fillings, dental implants, or crowns. We have many options, so please call us for a free cosmetic consultation.</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/assets/services/implant-dentistry.jpg" alt="Implant Dentistry" class="feature__image">
+                    <h3 class="feature__title">Implant Dentistry</h3>
+                    <p class="feature__copy">Dental implants are a great option for replacing missing teeth, improving chewing ability, eliminating bridges, and replacing dentures. Several implants may provide a base for a series of artificial teeth known as a fixed bridge. Implants can even be used to secure a full set of removable dentures for people who have no natural teeth.</p></div>
+                <div class="col-sm-4">
+                    <img src="/assets/services/sedation-dentistry.jpg" alt="Sedation Dentistry" class="feature__image">
+                    <h3 class="feature__title">Sedation Dentistry</h3>
+                    <p class="feature__copy">Sedation dentistry is an excellent treatment for patients with extensive dental needs, or who are concerned about anxiety, difficulty getting numb, or sensitive teeth.</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    {% include 'molecules/services__carousel.twig' %}
-
-    <div class="services-part-two">
-        <div class="heading">
-            <div class="container">
-                <h2 class="heading__title">More Services</h2>
-                <p class="heading__copy">Select a link below to learn more.</p>
-            </div>
+    <div class="main">
+        <div class="heading center container">
+            <h2 class="heading__title">More Services</h2>
+            <p class="heading__copy">Select a link to learn more about our services.</p>
         </div>
 
-        <div class="services-second-carousel full-width-wrapper hidden-xs">
-            <div class="container full-width">
-                <div class="owl-carousel js-services-carousel--two">
-                    {% for service in services %}
-                        <div class="services-carousel__item">
-                            <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><div class="services-carousel--image"><img src="assets/services/{{ service.image }}" alt="Service Image"></div></a>
-                            <div class="services-carousel__title">
-                                <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><h5>{{ service.title }}</h5></a>
-                                <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><h6>Learn More</h6></a>
-                            </div>
-                        </div>
-                    {% endfor %}
+        <div class="container">
+            <div class="row">
+                {% for service in services %}
+                <div class="col-sm-6 col-md-3 card" data-target="#modal--{{ service.modalTarget }}" data-toggle="modal"><img src="/assets/services/{{ service.image }}.jpg" alt="{{ service.titleFull }}" class="card__image">
+                    <div class="card__text">
+                        <h5 class="card__title">{{ service.title }}</h5>
+                        <p class="card__link">Learn More</p>
+                    </div>
                 </div>
+                {% endfor %}
             </div>
         </div>
-
-        <div class="services-second-carousel--mobile full-width-wrapper hidden-sm hidden-md hidden-lg">
-            <div class="container full-width">
-                <div class="owl-carousel js-services-carousel--two-mobile">
-                    {% for service in services if not service.featured %}
-                        <div class="services-carousel__item">
-                            <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><div class="services-carousel--image"><img src="assets/services/{{ service.image }}" alt="Service Image"></div></a>
-                            <div class="services-carousel__title">
-                                <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><h5>{{ service.title }}</h5></a>
-                                <a href="#" data-toggle="modal" data-target="#modal--{{ service.modalTarget }}"><h6>Learn More</h6></a>
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-
     </div>
 
     {% include 'molecules/services__modals.twig' %}

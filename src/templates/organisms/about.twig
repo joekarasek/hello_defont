@@ -1,26 +1,39 @@
 <section id="section-about" class="clearfix about">
-    {# creates BG and padding for content #}
-    <div class="about-main-bg">
-        {# the next 3 divs are bootstrap's layout #}
+
+    <div class="heading center">
+        <h2 class="heading__title">Meet the Doctor</h2>
+    </div>
+
+    <div class="video-slab">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 col-md-push-5">
-                    {# this is content #}
-                    <h2 class="about__title">Meet the Doctor</h2>
-                    <h3 class="about__doctor">Lori Smith, <span class="about__doctor--title">DDS</span></h3>
-                    {# this is the mobile and tablet image (only shows then) #}
-                    <div class="center">
-                        <img src="/assets/lori-mobile-bio.jpg" alt="{{ mainDoctor }}" class="about-mobile-image hidden-md hidden-lg">
-                    </div>
-                    <p class="about__copy">By combining advanced clinical dentistry with a fun, friendly style, Dr. Smith and her team will make you and your family more comfortable than you ever thought possible. Each year Dr. Smith participates in extensive postdoctoral studies from the nation’s foremost clinicians, who provide some of the latest advances in dental technology and the most effective materials available. So whether you’re looking for advanced cosmetic restorations, or simply a place to help maintain your family’s oral health, we’ll give you something to smile about!</p>
-                    <p class="about__copy about__copy--last">A native of Oklahoma, Dr. Smith earned her doctorate from the University of Oklahoma College of Dentistry. She and her husband, Lawrence, have been married for 16 years and love spending family time with their twins, Maggie and Bryson. They are active in their church and the local community.</p>
+                <div class="col-sm-8 col-sm-push-2">
+                    <iframe src="https://player.vimeo.com/video/231453460" width="640" height="360" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="main container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-push-2">
+                <h3 class="main__title center">Anthony DeFont, DDS</h3>
+                <p class="main__copy">A Sonora local, Dr. Anthony DeFont and his team combine advanced dentistry with a
+                    gentle, friendly style and a warm, inviting atmosphere that will make you and your family more
+                    comfortable than you ever thought possible.</p>
+                <p class="main__copy">Dr. DeFont received his dental degree from the University of the Pacific Arthur A.
+                    Dugoni School of Dentistry and went on to complete his general practice residency at the Veteran’s
+                    Hospital in Long Beach. His residency and continuing education has equipped him to provide the best
+                    care for you and your family including oral surgery, implant placement and restorations, conscious
+                    sedation, Invisalign® “invisible” orthodontics, cosmetic dentures, and comprehensive family
+                    care.</p>
+                <p class="main__copy">When not in the office, Dr. DeFont enjoys spending time with his family and
+                    friends. His hobbies include hiking, traveling, and snowboarding.</p>
+                {% include 'molecules/associations__carousel.twig' %}
+            </div>
+        </div>
+    </div>
     {# these are the icons on bottom #}
-    {% include 'molecules/associations__carousel.twig' %}
 
 </section>
 
