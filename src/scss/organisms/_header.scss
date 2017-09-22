@@ -86,7 +86,7 @@
   }
 
   @media (min-width: 992px) {
-    #primary-menu {
+    :not(.static-sticky) #primary-menu {
       height: 100%;
       display: flex;
       justify-content: center;
@@ -98,7 +98,10 @@
 
         &:first-child:hover,
         &:nth-child(2):hover,
-        &:nth-child(3):hover {
+        &:nth-child(3):hover,
+        &.current:first-child,
+        &.current:nth-child(2),
+        &.current:nth-child(3) {
           background-color: #7dbc3a;
           border-bottom-left-radius: 5px;
           border-bottom-right-radius: 5px;
@@ -114,6 +117,7 @@
 
   #primary-menu ul {
     min-height: 0;
+    border: none;
   }
 
   #primary-menu ul li {
