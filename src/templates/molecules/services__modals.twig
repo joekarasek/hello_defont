@@ -9,7 +9,7 @@
                         <h3 class="modal-title">{{ service.titleFull }}</h3>
                     </div>
                     <div class="modal-body clearfix">
-                        {% if service.image %}<div class="modal-image hidden-xs hidden-sm"><img src="assets/services/{{ service.image }}" alt="{{ service.titleFull }}"></div>{% endif %}
+                        {% if service.image %}<div class="modal-image hidden-xs hidden-sm"><img src="assets/services/{{ service.image }}.jpg" alt="{{ service.titleFull }}"></div>{% endif %}
                         {#{% if service.imageSpecial %}<div class="modal-image hidden-xs hidden-sm"><img src="assets/services/{{ service.imageSpecial }}" alt="{{ service.titleFull }}"></div>{% endif %}#}
                         {% for paragraph in service.text %}
                             <p>{{ paragraph }}</p>
