@@ -4,7 +4,7 @@
   background-position: top center;
   color: #fff;
   padding-top: 45px;
-  padding-bottom: 45px;
+  padding-bottom: 65px;
   position: relative;
 
   .owl-carousel .owl-nav [class*=owl-],
@@ -16,7 +16,7 @@
     margin-bottom: 25px;
 
     &__title {
-      color: #4b382c;
+      color: #fff;
       margin-bottom: 10px;
       font-weight: 700;
     }
@@ -48,12 +48,7 @@
   }
 
   .owl-nav {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    z-index: 0;
   }
 
   img {
