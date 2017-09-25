@@ -16,7 +16,7 @@
   HelloWorldDevsTysonSteele.tourCarousel('.js-tour-carousel', {
     autoplay: true,
     autoplayTimeout: 10000,
-    items: 1,
+    items: 3,
     margin: 40,
     navText: [
       '<img src="assets/tour-left.png">',
@@ -134,6 +134,14 @@
   $('#gallery-btn').click( function(e) {
     e.preventDefault();
     $('#gallery-target').click();
+  });
+
+  $('.js-tour-carousel img[data-lightbox-pointer]').each(function(index, element) {
+    $(element).click(function() {
+      var pointer = $(this).attr('data-lightbox-pointer');
+      var target = '[data-lightbox-target="' + pointer + '"]';
+      $(target).click();
+    });
   });
 
 }(jQuery, HelloWorldDevsTysonSteele));
