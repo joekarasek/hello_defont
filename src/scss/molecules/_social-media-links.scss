@@ -31,3 +31,19 @@
 .si-colored.si-vimeo {
   background: none !important;
 }
+
+.social-media-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+    text-align: right;
+  }
+}
+
+.custom-icon-bbb {
+  padding-right: 20px;
+}

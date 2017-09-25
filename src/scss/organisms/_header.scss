@@ -38,7 +38,7 @@
     background-size: contain;
 
     @media screen and (max-width: $width-md) {
-      background-color: #e8fbff;
+      background-color: #fff;
     }
   }
 
@@ -66,7 +66,7 @@
     #logo {
       a {
         text-align: right;
-        margin-left: 30px;
+        margin-left: 5px;
         margin-right: auto;
         padding-right: 30px;
       }
@@ -79,6 +79,7 @@
     }
 
     #primary-menu-trigger {
+      line-height: 70px;
       right: 10px;
       left: auto;
       color: #343b42;
@@ -123,7 +124,7 @@
   #primary-menu ul li {
     @media screen and (max-width: $width-md) {
       border-top: 1px solid #06b7d7;
-      background-color: #e8fbff;
+      background-color: #fff;
       padding-left: 30px;
 
       &:last-child {
