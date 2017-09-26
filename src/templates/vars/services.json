@@ -22,26 +22,6 @@
     },
     {
       "featured": false,
-      "title": "Crowns & Bridges",
-      "titleMobil": "Porcelain Crowns & Bridges",
-      "titleFull": "Porcelain Crowns & Bridges",
-      "image": "crowns",
-      "modalTarget": "crowns",
-      "text": ["Protect and keep badly decayed or fractured teeth while maintaining a beautiful smile. Made to perfectly match the shape and shade of your other teeth, they’re durable, strong, and undetectable.",
-        "Crowns should be placed before the tooth is so decayed that it may fracture. This can often help prevent the expense of root canal therapy in the future. If a tooth is too damaged to have a crown applied, a porcelain bridge may be a good alternative."]
-    },
-    {
-      "featured": false,
-      "title": "Clear Orthodontics",
-      "titleMobil": "Invisalign® Orthodontics",
-      "titleFull": "Invisalign® Orthodontics",
-      "image": "clear-orthodontics",
-      "modalTarget": "ortho",
-      "text": ["These “invisible” aligners are the latest in orthodontic technology for adults and teens. Straight teeth and a revitalized smile no longer need to come from a mouth full of unattractive wire and bracket braces. Enhancing self-esteem and physical confidence, invisible braces offer an esthetic and barely visible alternative to conventional wire/bracket braces.",
-        "Get the smile you've always wanted with Invisalign® Orthodontics."]
-    },
-    {
-      "featured": false,
       "title": "Preventive Care",
       "titleMobil": "Preventive Care",
       "titleFull": "Preventive Care",
@@ -60,12 +40,13 @@
     },
     {
       "featured": false,
-      "title": "Periodontal Therapy",
-      "titleMobil": "Periodontal Therapy",
-      "titleFull": "Periodontal Therapy",
-      "image": "periodontal",
-      "modalTarget": "perio",
-      "text": ["Gum disease is treated by carefully removing the bacteria and substances that form in the pockets around the teeth. The removal of this material occurs on a microscopic level and requires great skill. Our dental team has had advanced training to effectively remove all of the bacteria."]
+      "title": "Clear Orthodontics",
+      "titleMobil": "Invisalign® Orthodontics",
+      "titleFull": "Invisalign® Orthodontics",
+      "image": "clear-orthodontics",
+      "modalTarget": "ortho",
+      "text": ["These “invisible” aligners are the latest in orthodontic technology for adults and teens. Straight teeth and a revitalized smile no longer need to come from a mouth full of unattractive wire and bracket braces. Enhancing self-esteem and physical confidence, invisible braces offer an esthetic and barely visible alternative to conventional wire/bracket braces.",
+        "Get the smile you've always wanted with Invisalign® Orthodontics."]
     },
     {
       "featured": false,
@@ -75,6 +56,25 @@
       "image": "dentures",
       "modalTarget": "dentures",
       "text": ["A well made denture is not only comfortable and functions properly; it also allows the wearer to smile with confidence, knowing that their smile is no different than it would be with natural teeth. Creating a cosmetic denture is really an art in the hands of a skilled dentist like Dr. Defont."]
+    },
+    {
+      "featured": false,
+      "title": "Crowns & Bridges",
+      "titleMobil": "Porcelain Crowns & Bridges",
+      "titleFull": "Porcelain Crowns & Bridges",
+      "image": "crowns",
+      "modalTarget": "crowns",
+      "text": ["Protect and keep badly decayed or fractured teeth while maintaining a beautiful smile. Made to perfectly match the shape and shade of your other teeth, they’re durable, strong, and undetectable.",
+        "Crowns should be placed before the tooth is so decayed that it may fracture. This can often help prevent the expense of root canal therapy in the future. If a tooth is too damaged to have a crown applied, a porcelain bridge may be a good alternative."]
+    },
+    {
+      "featured": false,
+      "title": "Periodontal Therapy",
+      "titleMobil": "Periodontal Therapy",
+      "titleFull": "Periodontal Therapy",
+      "image": "periodontal",
+      "modalTarget": "perio",
+      "text": ["Gum disease is treated by carefully removing the bacteria and substances that form in the pockets around the teeth. The removal of this material occurs on a microscopic level and requires great skill. Our dental team has had advanced training to effectively remove all of the bacteria."]
     }
   ]
 }
