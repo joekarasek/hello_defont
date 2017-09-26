@@ -1,6 +1,6 @@
 #section-reviews {
   .top {
-    background-color: #dee5eb;
+    background-color: #c6d4e0;
   }
 
   .heading__title {
@@ -9,12 +9,14 @@
   }
 
   .bottom {
-    background-image: url(/assets/divider-reviews.jpeg);
+    background-image: url(/assets/divider-reviews.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: contain;
-    background-color: #fefdfe;
+    background-color: #e3edf4;
     padding-top: 90px;
+    padding-bottom: 30px;
+    // padding-top: 55px;
   }
 
   .review-videos {
