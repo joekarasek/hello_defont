@@ -144,6 +144,7 @@
     $('#gallery-target').click();
   });
 
+  // ======= Tour Carousel fix redirects click event to lightbox image modal =======
   $('.js-tour-carousel img[data-lightbox-pointer]').each(function(index, element) {
     $(element).click(function() {
       var pointer = $(this).attr('data-lightbox-pointer');
@@ -151,6 +152,9 @@
       $(target).click();
     });
   });
+
+  // ======= fix the tour loading and not having a size =======
+  $('.js-tour-carousel').trigger('resize.owl.carousel');
 
 }(jQuery, HelloWorldDevsTysonSteele));
 
