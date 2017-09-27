@@ -38,6 +38,11 @@
   .slide2 {
     .slide__image {
       padding-bottom: 20px;
+      width: 500px;
+
+      @media screen and (min-width: 768px) {
+        width: 550px;
+      }
     }
 
     .btn {
@@ -48,6 +53,11 @@
   .slide3 {
     .slide__image {
       padding-bottom: 20px;
+      width: 500px;
+
+      @media screen and (min-width: 768px) {
+        width: 550px;
+      }
     }
   }
 }
