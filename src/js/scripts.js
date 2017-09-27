@@ -22,7 +22,7 @@
       '<img src="assets/tour-left.png">',
       '<img src="assets/tour-right.png">'
     ],
-    autoHeight: true,
+    autoHeight: false,
     responsive: {
       768: {
         items: 2
